@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>TCC</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="black" role="navigation">
+    <!-- <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a> -->
+      <ul class="right hide-on-med-and-down">
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+      </ul>
+      <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center black-text">Toxic Comment Classifier</h1>
+      <div class="row center">
+        <h6 class="header col s12 light">Predicting The Toxicity Status Of Comments</h6>
+        <br>
+        </h5>
+      </div>
+
+              <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+            <label for="first_name"><b>Comment Section</b></label>
+            <br>
+          <input placeholder="Enter Comment Here" name="Comment" id="first_name" type="text" class="validate">
+        </div>
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light black">Predict Status</button>
+      </div>
+    </form>
+      </div>
+
+      <br>
+        <!-- Insult: {{pred1}}<br>
+        Identity Hate: {{pred2}}<br>
+        Obscene: {{pred3}}<br>
+        Threat: {{pred4}}<br>
+        Severe Toxic: {{pred5}}<br>-->
+        Toxicity: {{pred6}}<br>
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+Key: 0 means Not Toxic, 1 means Toxic    <div class="footer-copyright">
+      <div class="container">
+      <!-- Made by <a class="black-text text-lighten-3" href="http://materializecss.com">Materialize</a> -->
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
